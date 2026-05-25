@@ -48,7 +48,7 @@ If you run `dbt run --select int_trips_unioned`, what models will be built?
 
 - [ ]`stg_green_tripdata`, `stg_yellow_tripdata`, and `int_trips_unioned` (upstream dependencies)
 - [ ] Any model with upstream and downstream dependencies to `int_trips_unioned`
-- [X] <span style = "color :green">** `int_trips_unioned` only **</span>
+- [X] <span style = "color :green">**`int_trips_unioned`only**</span>
 - [ ]`int_trips_unioned`, `int_trips`, and `fct_trips` (downstream dependencies)
 
 **Solution:**
