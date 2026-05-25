@@ -103,7 +103,7 @@ What is the count of records in the `fct_monthly_zone_revenue` model?
 - [ ] 15,421
 
 ---
-![images/image03.png](attachment:3a2d7144-0c5f-480d-b25d-b0c29af7368d:image.png)
+<img width="1281" height="700" alt="Image" src="https://github.com/user-attachments/assets/552e7b9d-744f-451e-883c-203df072ad44" />
 
 ### Question 4. Best Performing Zone for Green Taxis (2020)
 
@@ -115,7 +115,7 @@ Which zone had the highest revenue?
 - [ ] Morningside Heights
 - [ ] East Harlem South
 - [ ] Washington Heights South
-![images/image04.png](attachment:683025b3-ee3a-4127-9edf-b2d4f33ac4a7:image.png)
+<img width="1298" height="709" alt="Image" src="https://github.com/user-attachments/assets/265ff345-28c5-4b9f-a58a-ad6ecd8920e1" />
 ---
 
 ### Question 5. Green Taxi Trip Counts (October 2019)
@@ -127,7 +127,7 @@ Using the `fct_monthly_zone_revenue` table, what is the **total number of trips*
 - [x] <span style = "color :green">**384,624**</span>
 - [ ] 421,509
 
-![images/image05.png]
+<img width="1280" height="760" alt="Image" src="https://github.com/user-attachments/assets/45dba867-972c-45ac-8d1f-33187e3a6dfb" />
 ---
 
 ### Question 6. Build a Staging Model for FHV Data
@@ -170,13 +170,10 @@ from source
 -- Filter out records with null vendor_id (data quality requirement)
 where dispatching_base_num is not null
 ```
-![images/image06.png](attachment:16ed0f76-e814-4771-83a5-e1e9da3fdf70:image.png)
+<img width="1083" height="846" alt="Image" src="https://github.com/user-attachments/assets/bf219457-e187-4382-9ca8-c1e00a5fcb30" />
 ## Submitting the solutions
 
 - Form for submitting: <https://courses.datatalks.club/de-zoomcamp-2026/homework/hw4>
-with source as (
-    select * from {{ source('raw', 'fhv_taxi_data') }}
-)
 
 
 
@@ -185,38 +182,6 @@ with source as (
 We encourage everyone to share what they learned. This is called "learning in public".
 
 Read more about the benefits [here](https://alexeyondata.substack.com/p/benefits-of-learning-in-public-and).
-
-### Example post for LinkedIn
-
-```
-🚀 Week 4 of Data Engineering Zoomcamp by @DataTalksClub complete!
-
-Just finished Module 4 - Analytics Engineering with dbt. Learned how to:
-
-✅ Build transformation models with dbt
-✅ Create staging, intermediate, and fact tables
-✅ Write tests to ensure data quality
-✅ Understand lineage and model dependencies
-✅ Analyze revenue patterns across NYC zones
-
-Transforming raw data into analytics-ready models - the T in ELT!
-
-Here's my homework solution: <LINK>
-
-Following along with this amazing free course - who else is learning data engineering?
-
-You can sign up here: https://github.com/DataTalksClub/data-engineering-zoomcamp/
-```
-
-### Example post for Twitter/X
-
-```
-📈 Module 4 of Data Engineering Zoomcamp done!
-
-- Analytics Engineering with dbt
-- Transformation models & tests
-- Data lineage & dependencies
-- NYC taxi revenue analysis
 
 My solution: <LINK>
 
