@@ -17,10 +17,10 @@ After completing the setup, you should have a working NYC taxi data pipeline.
 
 In a Bruin project, what are the required files/directories?
 
-- [ ]`bruin.yml` and `assets/`
-- [ ]`.bruin.yml` and `pipeline.yml` (assets can be anywhere)
-- [x]<span style = "color :green"> `.bruin.yml` and `pipeline/` with `pipeline.yml` and `assets/` </span>
-- [ ]`pipeline.yml` and `assets/` only
+- [ ] `bruin.yml` and `assets/`
+- [ ] `.bruin.yml` and `pipeline.yml` (assets can be anywhere)
+- [x] <span style = "color :green"> `.bruin.yml` and `pipeline/` with `pipeline.yml` and `assets/` </span>
+- [ ] `pipeline.yml` and `assets/` only
 
 ---
 
@@ -28,10 +28,10 @@ In a Bruin project, what are the required files/directories?
 
 You're building a pipeline that processes NYC taxi data organized by month based on `pickup_datetime`. Which incremental strategy is best for processing a specific interval period by deleting and inserting data for that time period?
 
-- [ ]`append` - always add new rows
-- [ ]`replace` - truncate and rebuild entirely
-- [x]<span style = "color :green">`time_interval` - incremental based on a time column </span>
-- [ ]`view` - create a virtual table only
+- [ ] `append` - always add new rows
+- [ ] `replace` - truncate and rebuild entirely
+- [x] <span style = "color :green">`time_interval` - incremental based on a time column </span>
+- [ ] `view` - create a virtual table only
 
 ---
 
@@ -50,10 +50,10 @@ variables:
 
 How do you override this when running the pipeline to only process yellow taxis?
 
-- [ ]`bruin run --taxi-types yellow`
-- [x]<span style = "color :green"> `bruin run --var taxi_types=yellow` </span>
-- [ ]`bruin run --var 'taxi_types=["yellow"]'`
-- [ ]`bruin run --set taxi_types=["yellow"]`
+- [ ] `bruin run --taxi-types yellow`
+- [x] <span style = "color :green"> `bruin run --var taxi_types=yellow` </span>
+- [ ] `bruin run --var 'taxi_types=["yellow"]'`
+- [ ] `bruin run --set taxi_types=["yellow"]`
 
 ---
 
@@ -72,10 +72,10 @@ You've modified the `ingestion/trips.py` asset and want to run it plus all downs
 
 You want to ensure the `pickup_datetime` column in your trips table never has NULL values. Which quality check should you add to your asset definition?
 
-- [ ]`name: unique`
-- [x]`name: not_null`
-- [ ]`name: positive`
-- [ ]`name: accepted_values, value: [not_null]`
+- [ ] `name: unique`
+- [x] `name: not_null`
+- [ ] `name: positive`
+- [ ] `name: accepted_values, value: [not_null]`
 
 ---
 
