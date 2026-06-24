@@ -61,10 +61,10 @@ How do you override this when running the pipeline to only process yellow taxis?
 
 You've modified the `ingestion/trips.py` asset and want to run it plus all downstream assets. Which command should you use?
 
-- [ ]`bruin run ingestion.trips --all`
-- [x]`bruin run ingestion/trips.py --downstream`
-- [ ]`bruin run pipeline/trips.py --recursive`
-- [ ]`bruin run --select ingestion.trips+`
+- [ ] `bruin run ingestion.trips --all`
+- [x] `bruin run ingestion/trips.py --downstream`
+- [ ] `bruin run pipeline/trips.py --recursive`
+- [ ] `bruin run --select ingestion.trips+`
 
 ---
 
